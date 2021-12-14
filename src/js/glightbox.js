@@ -363,7 +363,7 @@ class GlightboxInit {
     }
 
     /**
-     * Go to sldei
+     * Go to slide
      * calls set slide
      * @param {Int} - index
      */
