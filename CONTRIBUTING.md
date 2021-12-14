@@ -15,13 +15,13 @@ When fixing a bug please make sure to test it in several browsers including ie11
 
 ## :tada: Proposing a Change
 
-When implementing a feature please create an issue first explaining your idea and asking whether there's need for such a feature. Remember the script's core philosophy is to stay simple and minimal, doing one thing and doing it right.
+When implementing a feature please create an issue first explaining your idea and asking whether there's need for such a feature. Remember the scripts core philosophy is to stay simple and minimal, doing one thing and doing it right.
 
 ## :pencil: Before you open a Pull Request
 
-- Follow the same conding style.
+- Follow the same coding style.
 - Run eslint to verify your code, run the following command "eslint src/js" and fix any error you find in your code
-- **DO NOT** commit changes in the dist directory, this files are created automatically.
+- **DO NOT** commit changes in the dist directory, these files are created automatically.
 - Follow Git best practices (especially use meaningful commit messages).
 - Describe thoroughly you work in a PR comment.
 - Be patient and understanding. It's a side project, done in free time.
