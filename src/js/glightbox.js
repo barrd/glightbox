@@ -14,6 +14,7 @@ const version = '3.1.0';
 const isMobile = _.isMobile();
 const isTouch = _.isTouch();
 const html = document.getElementsByTagName('html')[0];
+const lastFocusedElement; // Store the last focused element
 
 const defaults = {
     selector: '.glightbox',
