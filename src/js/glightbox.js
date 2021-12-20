@@ -5,6 +5,8 @@
  * Github: https://github.com/biati-digital/glightbox
  */
 
+//const lastFocusedElement;
+
 import keyboardNavigation from './core/keyboard-navigation.js';
 import touchNavigation from './core/touch-navigation.js';
 import Slide from './core/slide.js';
@@ -14,7 +16,6 @@ const version = '3.1.0';
 const isMobile = _.isMobile();
 const isTouch = _.isTouch();
 const html = document.getElementsByTagName('html')[0];
-const lastFocusedElement; // Store the last focused element
 
 const defaults = {
     selector: '.glightbox',
@@ -117,9 +118,9 @@ defaults.lightboxHTML = `<div id="glightbox-body" class="glightbox-container" ta
     <div class="goverlay"></div>
     <div class="gcontainer">
     <div id="glightbox-slider" class="gslider"></div>
-    <button class="gclose gbtn" aria-label="Close" data-taborder="3">{closeSVG}</button>
-    <button class="gprev gbtn" aria-label="Previous" data-taborder="2">{prevSVG}</button>
-    <button class="gnext gbtn" aria-label="Next" data-taborder="1">{nextSVG}</button>
+    <button class="gclose gbtn" aria-label="Close" data-taborder="3"><span class="dashicons dashicons-no"></span></button>
+    <button class="gprev gbtn" aria-label="Previous" data-taborder="2"><span class="dashicons dashicons-arrow-left-alt"></span></button>
+    <button class="gnext gbtn" aria-label="Next" data-taborder="1"><span class="dashicons dashicons-arrow-right-alt"></span></button>
 </div>
 </div>`;
 
